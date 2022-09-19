@@ -1,0 +1,138 @@
+.profile{
+    width: 100%;
+
+    &__user{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-logout{
+            align-self: flex-end;
+            margin: 15px 20px 30px;
+            height: 35px;
+            color: white;
+            background-color: #e53637;
+            font-weight: bold;
+            border-radius: 15px;
+            width: 110px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        &-pic{
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        &-login{
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+        }
+    }
+
+    &__favs{
+        min-width: 100%;
+        width: fit-content;
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5.25%;
+        justify-content: left;
+
+        &-like{
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            background-color: rgb(73, 73, 73) !important;
+            font-size: 30px;
+            padding: 5px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 35px;
+            max-height: 35px;
+            height: 100%;
+            border-radius: 15%;
+
+            &-pic{
+                width: 20px;
+            }
+        }
+
+        &-top-wrap{
+            display: flex;
+            flex-basis: 100%;
+            color: white;
+            font-weight: bold;
+            align-items: center;
+            margin-bottom: 25px;
+
+            h2{
+                font-size: 23px;
+                text-transform: uppercase;
+            }
+
+            span{
+                display: inline-block;
+                height: 32px;
+                width: 4px;
+                background-color: #e53637;
+                margin-right: 20px;
+            }
+        }
+    
+        &-anime{
+            width: 250px;
+            flex-basis: 21%;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 22px;
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+
+            &-image{
+                height: 375px;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 5%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1023px){
+    .profile__favs{
+        gap: 7%;
+    }
+
+    .profile__favs-anime{
+        flex-basis: 28.6%;
+    }
+
+    .profile__favs-anime-image{
+        height: 425px;
+    }
+}
+
+@media (max-width: 767px){
+    .profile__favs{
+        gap: 10%;
+        justify-content: center;
+    }
+
+    .profile__favs-anime{
+        flex-basis: 38%;
+    }
+
+    .profile__favs-anime-image{
+        height: 425px;
+    }
+}

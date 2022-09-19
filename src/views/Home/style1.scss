@@ -1,0 +1,205 @@
+.home{
+    width: 100%;
+    display: flex;
+
+    &__top-anime{
+        width: 67%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4%;
+        justify-content: center;
+
+        a, a:hover, a:visited, a:active {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        &-top-wrap{
+            display: flex;
+            flex-basis: 100%;
+            color: white;
+            font-weight: bold;
+            align-items: center;
+            margin-bottom: 25px;
+
+            h2{
+                font-size: 23px;
+                text-transform: uppercase;
+            }
+
+            span{
+                display: inline-block;
+                height: 32px;
+                width: 4px;
+                background-color: #e53637;
+                margin-right: 20px;
+            }
+        }
+    }
+
+    &__top-char-header{
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    &__top-char-span{
+        display: inline-block;
+        height: 28px;
+        width: 4px;
+        background-color: #e53637;
+        margin-right: 18px;
+    }
+
+    &__char-pic{
+        height: 375px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 5%;
+    }
+
+    &__char-wrap{
+        width: 250px;
+        flex-basis: 30%;
+        color: white;
+        font-size: 21px;
+        font-weight: bold;
+        line-height: 22px;
+        text-align: center;
+        margin: 0 auto 30px;
+    }
+
+    &__top-char{
+        width: 33%;
+        padding-top: 2px;
+    }
+
+    &__top-char-top-wrap{
+        display: flex;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 27px;
+    }
+
+    &__anime-wrap{
+        width: 183px;
+        flex-basis: 30%;
+        color: white;
+        font-size: 21px;
+        font-weight: bold;
+        line-height: 22px;
+        text-align: center;
+        margin-bottom: 30px;
+
+        img{
+            height: 375px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 5%;
+        }
+    }
+
+    &__anime-theme-wrap{
+        margin: 10px 0 4px;
+        min-height: 24px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3px;
+    }
+
+    &__anime-pic-wrap{
+        position: relative;
+    }
+
+    &__anime-topic{
+        margin-bottom: 6px;
+        font-size: 10px;
+        color: #ffffff;
+        font-weight: 700;
+        padding: 1px 10px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50px;
+    }
+
+    &__anime-type{
+        height: 24px;
+        font-size: 13px;
+        color: #ffffff;
+        background: #e53637;
+        display: inline-block;
+        padding: 2px 15px;
+        border-radius: 4px;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+
+    &__anime-fav{
+        font-size: 13px;
+        color: #ffffff;
+        background: #3d3d3d;
+        display: inline-block;
+        padding: 2px 10px;
+        border-radius: 4px;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+    }
+}
+
+@media (max-width: 1023px){
+    .home{
+        display: block;
+    }
+
+    .home__top-char{
+        display: none;
+    }
+
+    .home__top-anime{
+        width: 100%;
+    }
+
+    .home__top-anime{
+        gap: 8%;
+    }
+
+    .home__anime-wrap{
+        max-width: 283px;
+        width: 100%;
+        flex-basis: 40%;
+        font-size: 30px;
+        line-height: 22px;
+        margin-bottom: 30px;
+    }
+
+    .home__anime-wrap img{
+        height: 430px;
+    }
+}
+
+@media (max-width: 767px){
+    .home__top-anime{
+        gap: 14%;
+        flex-direction: column;
+    }
+
+    .home__anime-wrap{
+        align-self: center;
+        width: 100%;
+        max-width: 303px;
+        flex-basis: 51%;
+        font-size: 30px;
+        line-height: 22px;
+        margin-bottom: 30px;
+    }
+
+    .home__anime-wrap img{
+        height: 470px;
+    }
+
+    .home__top-anime-top-wrap{
+        padding-left: 15%;
+        margin-top: 50px;
+    }
+}
